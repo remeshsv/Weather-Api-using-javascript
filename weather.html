@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Student Name:  Sreemoolam Venkitachalam, Remesh -->
+<!--Programming Assignment 1
+    A Weather Web Application-->
+
+<html lang="en">
+  <head>
+    <title>A Weather Web Application</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="weather.js"></script>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+  </head>
+  <body onload="initialize();">
+    <form>
+      <h1> Weather Report</h1>
+      <h4> A project by Remesh Sreemoolam Venkitachalam</h4>
+       <label>City: <input type="text" id="form-input"/></label>
+       <input type="button" onclick="sendRequest();" value="Weather details"/>
+    </form>
+    
+    </br>
+    </br>
+
+    <center><div id="output">&nbsp;</div></center>
+
+    </br>
+
+      <form>
+        <table id="result" align=center>
+          <th>City</th>
+          <th id="city">None</th>
+          <tr>
+            <td>Longitude</td>
+            <td id="long">None</td>
+          </tr>
+          <tr>
+            <td>Latitude</td>
+            <td id="lat">None</td>
+          </tr>
+          <tr>
+            <td>Weather</td>
+            <td id="weather">None</td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td id="desc">None</td>
+          </tr>
+          <tr>
+            <td>Temperature</td>
+            <td id="temp">None</td>
+          </tr>
+          <tr>
+            <td>Humidity</td>
+            <td id="hum">None</td>
+          </tr>
+          <tr>
+            <td>Pressure</td>
+            <td id="pres">None</td>
+          </tr>
+          <tr>
+            <td>Max Temerature</td>
+            <td id="max">None</td>
+          </tr>
+          <tr>
+            <td>Min Temperature</td>
+            <td id="min">None</td>
+          </tr>
+          <tr>
+            <td>Cloud rate</td>
+            <td id="cloudr">None</td>
+          </tr>
+          <tr>
+            <td>Sunrise</td>
+            <td id="rise">None</td>
+          </tr>
+          <tr>
+            <td>Sunset</td>
+            <td id="set">None</td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td id="today">None</td>
+          </tr>
+        </table>
+      </form>
+
+
+  </body>
+</html>

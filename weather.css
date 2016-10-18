@@ -1,0 +1,72 @@
+/* Student Name:  Sreemoolam Venkitachalam, Remesh
+// Programming Assignment 1
+// A Weather Web Application */
+
+
+body{
+	background-color: #93FDFF;
+	background-image: url("https://www.nps.gov/dena/planyourvisit/images/weather1.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+h1{
+	color: #4482FA;
+	text-align:center;
+}
+
+h4{
+	color: #4482FA;
+	text-align:center;
+}
+label{
+	color: #245253;
+	font-size: 120%;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table{
+	border-collapse: collapse;
+	width: 70%;
+	background-color: #529CE8;
+	}
+
+table tr td{
+	text-align: center;
+	height: 50px;
+}
+
+table th{
+	color: #18186B;
+	background-color: #387AF9;
+	font-family: Arial, Georgia, Serif;
+	font-size: 120%;
+}
+
+tr:nth-child(odd) {
+	background-color: #B0CAFC;
+}
+
+#result{
+  background-color: #529CE8;
+  visibility: hidden;
+  }
+
+#output{
+	color: #093C9D;
+	font-size: 150%;
+	font: solid;
+	font-family: "Times New Roman", Arial,  Serif;
+}
+
+h1:hover {
+color: #BB0BCF;
+}
+h4:hover {
+color: #BB0BCF;
+}
+input:hover{
+	background-color: #CAC9C9;
+}

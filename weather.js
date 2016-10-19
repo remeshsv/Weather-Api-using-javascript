@@ -35,10 +35,10 @@ function sendRequest () {
         if (this.readyState == 4) {
             var json = JSON.parse(this.responseText);
             var str = JSON.stringify(json,undefined,2);
-            var backToDate = new Date(json.dt);
+            var backToDate = new Date(json.dt*1000);
             var date= backToDate.toString();
-            var rise = new Date(json.sys.sunrise);
-            var set =new Date(json.sys.sunset);
+            var rise = new Date(json.sys.sunrise*1000);
+            var set =new Date(json.sys.sunset*1000);
             var srise = rise.toString();
             var sset = set.toString();
             date = date.substr(0,15);
@@ -71,7 +71,7 @@ function sendRequest () {
             else if(json.clouds.all>25){
                 vis="Cloudy, but medium visibility.";
             }else if(json.clouds.all>5){
-                vis="Bright colorful day. Good visibility/";
+                vis="Bright colorful day. Good visibility";
             }else{
                 vis="Enjoy the cloudless sky. High visibility.";
             }
